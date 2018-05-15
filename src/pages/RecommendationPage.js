@@ -12,7 +12,7 @@ class RecommendationForm extends Component {
 	}
 
 	componentDidMount = () => {
-		fetch('http://localhost:8080/api/recommendations')
+		fetch('https://soundtube.herokuapp.com/api/recommendations')
 		  .then(res => res.json())
 		  .then(storage => this.setState({ storage }))
 		  .catch(err => console.log(err))
@@ -28,7 +28,7 @@ class RecommendationForm extends Component {
 
 	createRec = (e) => {
 		e.preventDefault();
-		fetch('http://localhost:8080/api/recommendations', {
+		fetch('https://soundtube.herokuapp.com/api/recommendations', {
 			method: 'POST',
 			headers: {
 		    'Accept': 'application/json',

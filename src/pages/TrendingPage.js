@@ -10,7 +10,7 @@ class TrendingPage extends Component {
 	}
 
 	componentDidMount = () => {
-		fetch('http://localhost:8080/api/videos')
+		fetch('https://soundtube.herokuapp.com/api/videos')
 		  .then(res => res.json())
 		  .then(videos => {
 		  	this.setState({ videos })

@@ -12,7 +12,7 @@ class VideoPage extends Component {
 
 	componentDidMount = () => {
 		let videoId = this.props.match.params.video_id;
-		fetch(`http://localhost:8080/api/videos/${videoId}`)
+		fetch(`https://soundtube.herokuapp.com/api/videos/${videoId}`)
 		  .then(res => res.json())
 		  .then(video => {
 		  	this.setState({ video })
@@ -29,7 +29,7 @@ class VideoPage extends Component {
 	handleVotes = () => {
 		let videoId = this.props.match.params.video_id;
 		let updatedVote = this.state.video.votes + 1;
-		fetch(`http://localhost:8080/api/videos/${videoId}`, {
+		fetch(`https://soundtube.herokuapp.com/api/videos/${videoId}`, {
 			method: 'PUT',
 			headers: {
 		    'Accept': 'application/json',
@@ -60,7 +60,7 @@ class VideoPage extends Component {
 	createComment = (e) => {
 		e.preventDefault();
   		let videoId = this.props.match.params.video_id;
-		fetch(`http://localhost:8080/api/videos/${videoId}/comments`, {
+		fetch(`https://soundtube.herokuapp.com/api/videos/${videoId}/comments`, {
 			method: 'POST',
 			headers: {
 		    'Accept': 'application/json',
