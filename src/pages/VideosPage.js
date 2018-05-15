@@ -13,7 +13,7 @@ class VideosPage extends Component {
 	}
 
 	componentDidMount = () => {
-		fetch('https://soundtube.herokuapp.com/api/videos')
+		fetch('http://localhost:8080/api/videos'||'https://soundtube.herokuapp.com/api/videos')
 		  .then(res => res.json())
 		  .then(videos => {
 		  	this.setState({ videos })
