@@ -31,7 +31,7 @@ class VideosPage extends Component {
 			return (
 				<div key={video._id} className='videosCard'>
 			        <div className="row">
-					    <div className="col s12 offset-14">
+					    <div className="col s12 offset-s2">
 					    	<div className="card">
 						        <div className="card-image">
 						          <iframe title={video.title} type="text/html" width="200" height="100"
@@ -57,7 +57,7 @@ class VideosPage extends Component {
 			return (
 				<div key={video._id} className='videosCard'>					
 			        <div className="row">
-					    <div className="col s12 offset-14">
+					    <div className="col s12 offset-s2">
 					    	<div className="card">
 						        <div className="card-image">
 						          <iframe title={video.title} type="text/html" width="200" height="100"
