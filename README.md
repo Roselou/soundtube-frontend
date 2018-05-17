@@ -1,6 +1,6 @@
 # Soundtube 
 
-Soundtube is simple app that contains videos about music and tutorials in which user can leave the comment and likes on each video.
+Soundtube is simple web app that contains a curated collection of music videos and tutorials with which the user can watch as well as add their own comments and likes on each video. Users can also recommend more videos they would like to see in the collections through a simple form on the Recommendations page. 
 
 Try [Soundtube on Heroku](https://sheltered-wildwood-57874.herokuapp.com/)
 
@@ -14,14 +14,14 @@ Front-end: https://github.com/dchuong09/soundtube-frontend.git
 * Javascript 
 * Node
 * React 
-* Mongodb 
+* Mongoose/Mongodb
 * Materialize
 
 # Installation
 
 * git clone 
 * npm install
-* mongod - nodemon (Back-end)
+* mongod + nodemon (Back-end)
 * npm start (Front-end)
 
 # The Team 
