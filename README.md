@@ -6,7 +6,7 @@ Try [Soundtube on Heroku](https://sheltered-wildwood-57874.herokuapp.com/)
 
 # Links to repositories
 
-Back-end: https://github.com/dchuong09/soundtube-backend.git. 
+Back-end: https://github.com/dchuong09/soundtube-backend.git <br />
 Front-end: https://github.com/dchuong09/soundtube-frontend.git
 
 # Technologies 
